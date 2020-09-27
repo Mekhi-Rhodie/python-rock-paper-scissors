@@ -8,7 +8,9 @@ cpu_score = 0
 cpu_choices = ['Rock', 'Paper', 'Scissors']
 
 
-def game(user_score, cpu_score):
+def game():
+    global cpu_score
+    global user_score
     user_choice = input("Rock, Paper, or Scissors?:  ").title()
     cpu_choice = cpu_choices[randint(0, 2)]
     print(f"You chose:  {user_choice}")
@@ -44,7 +46,7 @@ def game(user_score, cpu_score):
 
 
 while game_active == True:
-    game(user_score, cpu_score)
+    game()
     if user_score == 3:
         print("You have Won the Game!")
         game_active = False
