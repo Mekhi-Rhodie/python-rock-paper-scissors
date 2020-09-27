@@ -1,9 +1,7 @@
 from random import randint
 
 game_active = True
-user_wins = 0
 user_score = 0
-cpu_wins = 0
 cpu_score = 0
 cpu_choices = ['Rock', 'Paper', 'Scissors']
 
